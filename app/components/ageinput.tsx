@@ -20,8 +20,8 @@ const inputInfo = {
   },
   year: {
     placeholder: "YYYY",
-    min: Number.MAX_SAFE_INTEGER,
-    max: Number.MIN_SAFE_INTEGER,
+    min: Number.MIN_SAFE_INTEGER,
+    max: Number.MAX_SAFE_INTEGER,
     length: 4,
   },
 };
