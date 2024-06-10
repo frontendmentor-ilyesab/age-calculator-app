@@ -37,9 +37,9 @@ export default function NumberDisplay({ number, type }: NumberDisplayProps) {
   }
 
   return (
-    <p className="flex items-center gap-2">
+    <span className="flex items-center gap-2">
       {content}
       <span>{type}</span>
-    </p>
+    </span>
   );
 }
