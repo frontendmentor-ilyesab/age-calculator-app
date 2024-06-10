@@ -19,7 +19,7 @@ export default function Home() {
   }
 
   return (
-    <main className="xs:px-6 max-w-md rounded-3xl rounded-br-[6rem] bg-white px-4 py-12 sm:max-w-none sm:rounded-br-[8rem] md:max-w-2xl lg:max-w-[950px] lg:rounded-br-[14rem] lg:p-14">
+    <main className="max-w-md rounded-3xl rounded-br-[6rem] bg-white px-4 py-12 xs:px-6 sm:max-w-none sm:rounded-br-[8rem] md:max-w-2xl lg:max-w-[880px] lg:rounded-br-[14rem] lg:p-14">
       <AgeForm onSuccess={handleSuccess} />
       <AgeDisplay years={years} months={months} days={days} />
     </main>

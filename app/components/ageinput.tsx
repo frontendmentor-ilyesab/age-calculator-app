@@ -20,8 +20,8 @@ const inputInfo = {
   },
   year: {
     placeholder: "YYYY",
-    min: "",
-    max: "",
+    min: Number.MAX_SAFE_INTEGER,
+    max: Number.MIN_SAFE_INTEGER,
     length: 4,
   },
 };
@@ -43,7 +43,7 @@ export default function ageInput({ type, error }: ageInputProps) {
         {type}
       </label>
       <input
-        className="xs:px-4 xs:text-lg w-full appearance-none rounded-lg border border-grey-light px-2 py-3 text-base font-extrabold placeholder:tracking-wider focus:cursor-pointer focus:border-purple focus:caret-purple focus:outline-none group-[.invalid]/form:border-red sm:text-2xl lg:px-6 lg:text-[2rem]"
+        className="w-full appearance-none rounded-lg border border-grey-light px-2 py-3 text-base font-extrabold placeholder:font-extrabold placeholder:tracking-wider focus:cursor-pointer focus:border-purple focus:caret-purple focus:outline-none group-[.invalid]/form:border-red xs:px-4 xs:text-lg sm:text-2xl lg:px-6 lg:text-[2rem]"
         id={type}
         name={type}
         placeholder={inputInfo[type].placeholder}
@@ -54,7 +54,7 @@ export default function ageInput({ type, error }: ageInputProps) {
         onBeforeInput={handleBeforeInput}
         required
       />
-      <span className="text-center text-xs italic text-red sm:text-left sm:text-sm lg:text-base">
+      <span className="text-center text-xs italic text-red sm:text-left sm:text-sm lg:text-[0.9rem]">
         {error}
       </span>
     </div>
